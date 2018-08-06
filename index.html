@@ -1,0 +1,533 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+     <link rel="SHORTCUT ICON" href="img/folderaccess.ico" type="image/x-icon">
+    <title>ProFitness</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,800" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/media.css">
+</head>
+<body>
+    <header class="header" id="header">
+        <div class="header__part_one" id="header__part_one">
+            <div class="container">
+               <div class="menu__info">
+                   <ul class="menu">
+                       <li class="menu__item">
+                           <i class="fas fa-phone"></i>
+                           <p class="info">
+                               +38 050 32 45 555
+                           </p>
+                       </li>
+                       <li class="menu__item">
+                           <i class="far fa-envelope"></i>
+                           <p class="info">
+                               mail@fitness.org
+                           </p>
+                       </li>
+                       <li class="menu__item">
+                           <i class="fas fa-map-marker-alt"></i>
+                           <p class="info">
+                               г. Киев, ул.Центр, дом. 1
+                           </p>
+                       </li>
+                       <li class="menu__item">
+                           <i class="far fa-clock"></i>
+                           <p class="info">
+                               Пн-Сб 9:00-22:00, Вс 10:00-22:00
+                           </p>
+                       </li>
+                   </ul>
+                   <ul class="social">
+                       <li class="social__item">
+                           <a href="#" class="social__item_link">
+                               <i class="fab fa-facebook-f"></i>
+                           </a>
+                       </li>
+                       <li class="social__item">
+                           <a href="#" class="social__item_link">
+                               <i class="fab fa-vk"></i>
+                           </a>
+                       </li>
+                       <li class="social__item">
+                           <a href="#" class="social__item_link">
+                               <i class="fab fa-youtube"></i>
+                           </a>
+                       </li>
+                       <li class="social__item">
+                           <a href="#" class="social__item_link">
+                               <i class="fab fa-instagram"></i>
+                           </a>
+                       </li>
+                   </ul>
+               </div>
+            </div>
+        </div>
+        <div class="container disfl">
+            <img src="img/ProFitness.png" alt="ProFitness" class="logo">
+            <nav>
+                <ul class="navigation">
+                    <li class="navigation__item">
+                        <a href="#" class="navigation__item_links">
+                            О нас
+                        </a>
+                    </li>
+                    <li class="navigation__item">
+                        <a href="#" class="navigation__item_links">
+                            Услуги
+                        </a>
+                    </li>
+                    <li class="navigation__item">
+                        <a href="#" class="navigation__item_links">
+                            Расписание
+                        </a>
+                    </li>
+                    <li class="navigation__item">
+                        <a href="#" class="navigation__item_links">
+                            Цены
+                        </a>
+                    </li>
+                    <li class="navigation__item">
+                        <a href="#" class="navigation__item_links">
+                            Команда
+                        </a>
+                    </li>
+                    <li class="navigation__item">
+                        <a href="#" class="navigation__item_links">
+                            Контакты
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section class="section__second" id="section__second">
+        <div class="container">
+            <div class="fitnessCenter">
+                <h1 class="fitness__center">
+                    Фитнес центр
+                </h1>
+                <p class="fitness__center_text">
+                    Начните свой путь к здоровому образу жизни с помощью
+                    наших персонализированных программ
+                </p>
+                <button id="myBtn" class="recording">
+                    Записаться
+                </button>
+                <div id="myModal" class="modal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <div class="containerForm">
+                            <form class="modalForm" action="" >
+                                <p class="modalForm-text">
+                                    Имя
+                                 </p>
+                                <input class="modalForm-input" type="text" name="login" placeholder="Ваше имя"><br>
+                                <p class="modalForm-text">
+                                    Возраст
+                                </p>
+                                <input class="modalForm-input" type="text" name="login" placeholder="Ваше возрастс"><br>
+                                <p class="modalForm-text">
+                                    Вес
+                                </p>
+                                <input class="modalForm-input" type="text" name="login" placeholder="Ваш вес"><br>
+                                <p class="modalForm-text">
+                                    Пол
+                                </p>
+                                <input type="radio" name="sex" value="0">Мужской
+                                <input type="radio" name="sex" value="1">Женский
+                                <br>
+                                <p class="modalForm-text">
+                                    Список видов спорта
+                                </p>
+                                <div id="dropdown-menu" class="dropdown-menu">
+                                    <span class="title">Личный тренер</span>
+                                    <ul>
+                                        <li><a href="#">Личный тренер</a></li>
+                                        <li><a href="#">Тренажерный зал</a></li>
+                                        <li><a href="#">Групповые занятия</a></li>
+                                        <li><a href="#">Бокс</a></li>
+                                    </ul>
+                                </div>
+
+                                <input class="agree" type="checkbox" name="agree">Согласен со всем<br>
+                                <input class="send" type="submit" name="Отправить">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section__third" id="section__third">
+       <div class="container">
+           <h2 class="services" id="services">
+               Услуги
+           </h2>
+           <div class="services__item">
+               <div class="personal__coach">
+                   <div class="services__item_text">
+                       Личный тренер
+                   </div>
+                   <div class="services__item_additionally ">
+                       <div class="services__item_hover">
+                           Личный тренер
+                       </div>
+                       <p class="price">
+                           235 рн
+                       </p>
+                       <p class="description">
+                           Excepteur sint cupidatat nonsunt  proident, sunt culpa deserunt officia mollit anim est ideaes cupidatat laborum.
+                       </p>
+                       <button href="#" class="recording  recording__btn">
+                           Подробнее
+                       </button>
+                   </div>
+               </div>
+               <div class="gym">
+                   <div class="services__item_text">
+                       Тренажерный <br> зал
+                   </div>
+                   <div class="services__item_additionally services__item_one">
+                       <div class="services__item_hover">
+                           Тренажерный  зал
+                       </div>
+                       <p class="price">
+                           235 рн
+                       </p>
+                       <p class="description">
+                           Excepteur sint cupidatat nonsunt  proident, sunt culpa deserunt officia mollit anim est ideaes cupidatat laborum.
+                       </p>
+                       <button href="#" class="recording  recording__btn">
+                           Подробнее
+                       </button>
+                   </div>
+               </div>
+               <div class="group__lessons">
+                   <div class="services__item_text">
+                       Групповые <br> занятия
+                   </div>
+                   <div class="services__item_additionally services__item_one">
+                       <div class="services__item_hover">
+                           Групповые  занятия
+                       </div>
+                       <p class="price">
+                           235 рн
+                       </p>
+                       <p class="description">
+                           Excepteur sint cupidatat nonsunt  proident, sunt culpa deserunt officia mollit anim est ideaes cupidatat laborum.
+                       </p>
+                       <button href="#" class="recording  recording__btn">
+                           Подробнее
+                       </button>
+                   </div>
+               </div>
+               <div class="box">
+                   <div class="services__item_text">
+                       Бокс
+                   </div>
+                   <div class="services__item_additionally">
+                       <div class="services__item_hover">
+                           Бокс
+                       </div>
+                       <p class="price">
+                           235 рн
+                       </p>
+                       <p class="description">
+                           Excepteur sint cupidatat nonsunt  proident, sunt culpa deserunt officia mollit anim est ideaes cupidatat laborum.
+                       </p>
+                       <button href="#" class="recording  recording__btn">
+                           Подробнее
+                       </button>
+                   </div>
+               </div>
+           </div>
+       </div>
+    </section>
+    <section class="section-four" id="section-four">
+        <div class="container">
+            <h2 class="services aboutUs" id="services">
+                О нас
+            </h2>
+            <p class="aboutUs__text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor aboris nisi ut aliquip ex commodo consequat.
+            </p>
+            <div class="aboutUs__list">
+                <div class="aboutUs__list_item">
+                    <img class="img__list" src="img/picture1.png" alt="picture">
+                    <p class="specification">
+                        Эксклюзивное новое <br> оборудование
+                    </p>
+                </div>
+                <div class="aboutUs__list_item">
+                    <img class="img__list" src="img/picture2.png" alt="picture">
+                    <p class="specification">
+                        Индивидуальный подход <br>  к тренировкам
+                    </p>
+                </div>
+                <div class="aboutUs__list_item">
+                    <img class="img__list" src="img/picture3.png" alt="picture">
+                    <p class="specification">
+                        Скидочные программы для <br> постоянных клиентов
+                    </p>
+                </div>
+                <div class="aboutUs__list_item">
+                    <img class="img__list" src="img/picture4.png" alt="picture">
+                    <p class="specification">
+                        Мы предоставляем свой <br> спортинвентарь
+                    </p>
+                </div>
+            </div>
+            <div class="jogging">
+            <div class="jogging__play">
+            </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-five" id="section-five">
+        <div class="container">
+            <h2 class="services" id="services">
+                Тренера
+            </h2>
+            <div class="trainer">
+                <div class="trainer__list">
+                    <div class="trainer-img">
+                        <img class="coachList" src="img/trainer1.png" alt="trainer-img">
+                    </div>
+                    <div class="trainer__text">
+                        <p class="nameSurname">
+                            Имя Фамилия
+                        </p>
+                        <p class="trainerRoster">
+                            Главный тренер
+                        </p>
+                        <p class="trainerSkills">
+                            Lorem ipsum dolor consectetur adipisicing, eiusmo incididunt labore dolore aliqua.
+                        </p>
+                    </div>
+                </div>
+                <div class="trainer__list">
+                    <div class="trainer-img">
+                        <img src="img/trainer2.png" alt="trainer-img">
+                    </div>
+                    <div class="trainer__text">
+                        <p class="nameSurname">
+                            Имя Фамилия
+                        </p>
+                        <p class="trainerRoster">
+                           Тренер
+                        </p>
+                        <p class="trainerSkills">
+                            Lorem ipsum dolor consectetur adipisicing, eiusmo incididunt labore dolore aliqua.
+                        </p>
+                    </div>
+                </div>
+                <div class="trainer__list">
+                    <div class="trainer-img">
+                        <img src="img/trainer3.png" alt="trainer-img">
+                    </div>
+                    <div class="trainer__text">
+                        <p class="nameSurname">
+                            Имя Фамилия
+                        </p>
+                        <p class="trainerRoster">
+                            Тренер
+                        </p>
+                        <p class="trainerSkills">
+                            Lorem ipsum dolor consectetur adipisicing, eiusmo incididunt labore dolore aliqua.
+                        </p>
+                    </div>
+                </div>
+                <div class="trainer__list">
+                    <div class="trainer-img">
+                        <img src="img/trainer4.png" alt="trainer-img">
+                    </div>
+                    <div class="trainer__text">
+                        <p class="nameSurname">
+                            Имя Фамилия
+                        </p>
+                        <p class="trainerRoster">
+                            Тренер
+                        </p>
+                        <p class="trainerSkills">
+                            Lorem ipsum dolor consectetur adipisicing, eiusmo incididunt labore dolore aliqua.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-six" id="section-six">
+        <div class="container">
+            <div class="firstLesson">
+                Первое занятие у нас бесплатно
+            </div>
+            <div class="firstLesson-item">
+                <button href="#" class="recording  recording__btn firstLesson-btn">
+                    Записаться
+                </button>
+            </div>
+        </div>
+    </section>
+    <section class="section-seven" id="section-seven">
+        <div class="container">
+            <h2 class="services" id="services">
+                Отзывы
+            </h2>
+            <div class="reviews">
+                <div class="reviews__list">
+                    <img src="img/reviews1.png" alt="reviews-pic" class="reviews-pic">
+                    <div class="reviews__text">
+                        Lorem ipsum dolor sit amet, consectetur elit, eiusmod tempor incididunt labore et dolore magna aliqua. Ut minim veniam, ullamco commodo consequat.
+                    </div>
+                    <div class="name-surname">
+                        <img src="img/commas2.png" alt="" class="name__surname_img">
+                        Имя Фамилия
+                    </div>
+                </div>
+                <div class="reviews__list">
+                    <img src="img/reviews2.png" alt="reviews-pic" class="reviews-pic">
+                    <div class="reviews__text">
+                        Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+                    </div>
+                    <div class="name-surname">
+                        <img src="img/commas.png" alt="" class="name__surname_img">
+                        Имя Фамилия
+                    </div>
+                </div>
+                <div class="reviews__list">
+                    <img src="img/reviews3.png" alt="reviews-pic" class="reviews-pic">
+                    <div class="reviews__text">
+                        Excepteur sint occaecat cupidatat non proident, sunt in culpa officia deserunt mollit anim est laborum.
+                    </div>
+                    <div class="name-surname">
+                        <img src="img/commas.png" alt="" class="name__surname_img">
+                        Имя Фамилия
+                    </div>
+                </div>
+            </div>
+            <div class="arrows">
+                <i class="fas fa-chevron-left fa-chevronItem"></i>
+                <i class="fas fa-chevron-right fa-chevronItem"></i>
+            </div>
+        </div>
+    </section>
+    <section class="section-eight">
+        <div class="container">
+            <div class="newsSubscription">
+                Подписаться на новости
+            </div>
+            <p class="aboutUs__text aboutUs__text_new">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor aboris nisi ut aliquip ex commodo consequat.
+            </p>
+            <form  class="form" >
+                <input type="email" placeholder="Электронная почта" class="cell">
+                <button href="#" class="recording recording-form">
+                    Подписаться
+                </button>
+            </form>
+        </div>
+    </section>
+<section class="section-map">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2539.8221689193356!2d30.52017721591175!3d50.46303609433862!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce40db45810d%3A0xe252ee1a8270f5c8!2z0LLRg9C70LjRhtGPINCR0YDQsNGC0YHRjNC60LAsIDEwLCDQmtC40ZfQsiwgMDIwMDA!5e0!3m2!1sru!2sua!4v1531215144351" width="100%" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
+</section>
+    <footer>
+        <div class="container">
+            <div class="footer-item">
+                <div class="footer-main">
+                    <img src="img/ProFitness.png" alt="" class="footer-img">
+                    <p class="footer-text">
+                        Lorem ipsum dolor amet, constetur elit, eiusmod tempor incididunt labore dolore magna aliqua. Ut veniam, ullamco commodo consequat.
+                    </p>
+                    <ul class="social-footer">
+                        <li class="social__item_footer">
+                            <a href="#" class="social__item_links">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li class="social__item_footer">
+                            <a href="#" class="social__item_links">
+                                <i class="fab fa-vk"></i>
+                            </a>
+                        </li>
+                        <li class="social__item_footer">
+                            <a href="#" class="social__item_links">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </li>
+                        <li class="social__item_footer">
+                            <a href="#" class="social__item_links">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-pages">
+                    <h2 class="pages">
+                        Страницы
+                    </h2>
+                    <a href="#" class="pages-links">
+                        О нас
+                    </a>
+                    <a href="#" class="pages-links">
+                        Услуги
+                    </a>
+                    <a href="#" class="pages-links">
+                        Расписание
+                    </a>
+                    <a href="#" class="pages-links">
+                        Цены
+                    </a>
+                    <a href="#" class="pages-links">
+                        Команда
+                    </a>
+                    <a href="#" class="pages-links">
+                        Контакты
+                    </a>
+                </div>
+                <div class="footer-contacts">
+                    <h2 class="pages">
+                        Контакты
+                    </h2>
+                    <div class="contacts-list">
+                        <a href="#" class="pages-links">
+                            <i class="fas fa-phone"></i>
+                            +38 050 32 45 555
+                        </a>
+                        <a href="#" class="pages-links">
+                            <i class="far fa-envelope"></i>
+                            mail@fitness.org
+                        </a>
+                        <a href="#" class="pages-links">
+                            <i class="fas fa-map-marker-alt"></i>
+                            г. Киев, ул.Центр, дом. 1
+                        </a>
+                    </div>
+                </div>
+                <div class="schedule">
+                    <h2 class="pages">
+                        График работы
+                    </h2>
+                    <div class="schedule-list">
+                        <a href="#" class="pages-links">
+                            Пн-Сб 9:00-22:00
+                        </a>
+                        <a href="#" class="pages-links">
+                            Вс 10:00-22:00
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="pages-links copiryte">
+                © 2017 Все права защищены
+            </a>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
